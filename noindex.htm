@@ -1,0 +1,161 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js.js"></script>
+
+<link rel="stylesheet/less" type="text/css" href="style.less" />
+<script src="less.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:900,400,300,900,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<meta content="text/html; charset=<?php echo SITE_CODING?>" http-equiv="Content-Type"></meta>
+<title>////////////////////</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">
+</head>
+
+<body>	
+	<div id="hide-layout" class="hide-layout"></div>
+		<div id="popup" class="popup">
+			<div id="btn-close" class="btn-close fright" title="Закрыть" unselectable="on"><img src="/templates/template70/img/close.svg" /></div>
+			<div class="clearing"></div>
+			<div class="form-style" id="contact_form">
+			    <div id="contact_results"></div>
+			    <div id="contact_body">
+		            <input type="text" name="name" id="name" required="true" placeholder="Ваше имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'"/>
+		            <input type="email" name="email" required="true" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'"/>
+		            <input type="tel" name="phone2" maxlength="15"  placeholder="Номер телефона" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Номер телефона'" />
+		            
+		            <div>Вас интересуют:</div>
+		            <select name="subject" class="select_styled mtten">
+			            <option value="Мобильные стеллажи">Мобильные стеллажи</option>
+		            </select>
+		            <textarea name="message" id="message" required="true" placeholder="Пара слов о проекте" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пара слов о проекте'"></textarea>
+					<input type="submit" id="submit_btn" value="Отправить заявку" />
+			    </div>
+			</div>			
+		</div>
+
+
+<div class="container">
+
+<div class="wrap">
+	<div class="mttw">
+		<div class="logo fleft mrtw"><img title="Ю-ПАК" src="img/logo.svg" /></div>
+		<div class="navigation fleft">
+			<ul class="fleft nolist mltw mrtw one">
+				<li><a href="">О компании</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<ul class="fleft nolist mltw mrtw two">
+				<li><a href="">Сертификаты</a></li>
+				<li><a href="">Производство</a></li>
+				<li><a href="">Новости</a></li>
+			</ul>
+		</div>
+		<div class="fleft mltw mrtw adress"><i>Москва, Варшавское шоссе<br/>д. 42, офис 6112</i></div>
+		<div class="fright mltw">
+			<big>+7 495 <b>640-03-77</b></big>
+			<div id="click-me-bottom" class="button">Заказать звонок</div>
+		</div>
+		<div class="clearing"></div>
+	</div>
+	
+	<ul class="tabs nolist">
+		<li class="tab-link current" data-tab="tab-1">Стеллажи</li>
+		<li class="tab-link" data-tab="tab-2">Металлические шкафы</li>
+		<li class="tab-link" data-tab="tab-3">Нестандартные металлоконструкции</li>
+	</ul>
+	<div id="tab-1" class="tab-content current">
+		Каталог стеллажей
+	</div>
+	<div id="tab-2" class="tab-content">
+		Каталог шкафов
+	</div>
+	<div id="tab-3" class="tab-content">
+		Каталог конструкций
+	</div>
+	
+	<div class="feats">
+		<h2>Наши преимущества</h2>
+		<div class="features tableview fixed">
+			<div class="feature cellview prtw">
+				<div class="icon">
+					<img src="img/icons/venok.svg"/>
+				</div>
+<h3>Высокое качество продукции</h3>
+Наша компания занимается изготовлением и продажей складских стеллажей и другой металлической мебели, соответствующей требованиям ГОСТ 16140-77, ГОСТ 16371-93, санитарно-эпидемиологическим и гигиеническим нормам.
+			</div>
+			<div class="feature cellview pltw">
+				<div class="icon">
+					<img src="img/icons/nestandart.svg"/>
+				</div>
+<h3>Собственное производство стеллажей</h3>
+Нами осуществляется продажа складских стеллажей, изготовленных на собственной производственной базе площадью 3500 м2. Завод по изготовлению стеллажей оснащен импортным металлообрабатывающим оборудованием. При производственной базе также располагается склад, где находятся готовые складские стеллажи и другие металлические изделия.
+			</div>
+		</div>
+		<div class="features tableview fixed">
+			<div class="feature cellview prtw">
+				<div class="icon">
+					<img src="img/icons/nestandart.svg"/>
+				</div>
+<h3>Возможность заказа нестандартных конструкций</h3>
+Наша компания предлагает изготовление металлических стеллажей любых конструкций на заказ. Производство мебели с учетом пожеланий клиента позволит оптимально использовать пространство помещения. Наши специалисты бесплатно разработают проект стеллажей для будущего склада, архива или офиса.
+			</div>
+			<div class="feature cellview pltw">
+				<div class="icon">
+					<img src="img/icons/nestandart.svg"/>
+				</div>
+<h3>Полный комплекс услуг</h3>
+В спектр услуг компании «Ю-Пак Техника» входят все работы по оснащению помещений складским оборудованием: проектирование, производство, монтаж, гарантийное и постгарантийное 
+обслуживание оборудования.
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="fleft col-3 news">
+		<h3><a href="/news">Новости</a></h3>
+		<div class="date">24.05.2015</div>
+		<p><a href="/news/45609809">Мы рады сообщить о начале серийного выпуска новых опций для стеллажей серий «АРХИВ», а именно — дверей распашных, планок ограничительных нового типа, не требующих использования инструмента при монтаже (безболтовое крепление).</a></p>
+	</div>
+	<div class="fleft col-60 clients">
+		<h3>Наши клиенты</h3>
+		<div class="client">
+			<img src="img/gazprom.svg"/>
+			<img src="img/sberbank.svg" class="pbtw"/>
+			<img src="img/rzd.svg"/>
+			<img src="img/macdon.svg" height="60"/>
+		</div>
+	</div>
+
+</div><!--wrap-->
+<div class="clearing"></div>
+
+<div class="footer pttw">
+	<div class="tableview fixed">
+		<div class="cellview">
+			© 2015 «Ю-Пак Техника»<br/>info@u-pack.org
+		</div>
+		<div class="cellview prtw">
+			<b>Центральный офис</b><br/>
+Москва, Варшавское шоссе<br/> д.42, офис 6112<br/>
+Тел./Факс: +7(495) 640-03-77
+		</div>
+		<div class="cellview">
+			<b>Адрес производства</b><br/>Тула, ул.Герцена, д.24
+		</div>
+		<div class="cellview" align="right">
+			Заказать звонок
+		</div>
+	</div>
+	<div align="center"><small>Создание сайта&nbsp;&mdash; <a target="_blank" href="http://arsdesign.ru">Студия Владислава Тимофеева</a></small></div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="form.js"></script>
+<link rel="stylesheet/less" type="text/css" href="style.less" />
+
+<!--<script src="cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>-->
+
+<script src="less.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:900,400,300,900,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<meta content="text/html; charset=<?php echo SITE_CODING?>" http-equiv="Content-Type"></meta>
+<title>U-PACK</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">-->
+</head>
+
+<body>	
+	<div id="hide-layout" class="hide-layout"></div>
+		<div id="popup" class="popup">
+			<div id="btn-close" class="btn-close fright" title="Закрыть" unselectable="on"><img src="img/close.svg" /></div>
+			<div class="clearing"></div>
+			<div class="form-style" id="contact_form">
+			    <div id="contact_results"></div>
+			    <div id="contact_body">
+		            <input type="text" name="name" id="name" required="true" placeholder="Ваше имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'"/>
+		            <input type="email" name="email" required="true" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'"/>
+		            <input type="tel" name="phone2" maxlength="15"  placeholder="Номер телефона" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Номер телефона'" />
+		            
+		            <div>Вас интересуют:</div>
+		            <select name="subject" class="select_styled mtten">
+			            <option value="Мобильные стеллажи">Мобильные стеллажи</option>
+		            </select>
+		            <textarea name="message" id="message" required="true" placeholder="Пара слов о проекте" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пара слов о проекте'"></textarea>
+					<input type="submit" id="submit_btn" value="Отправить заявку" />
+			    </div>
+			</div>			
+		</div>
+
+
+<div class="container">
+
+<div class="wrap">
+	<!--<div class="mttw">
+		<div class="logo fleft mltw"><img title="Ю-ПАК" src="img/logo.svg" class="mltw"/></div>
+		<div class="navigation fleft ">
+			<ul class="fleft nolist prtw mltw mrtw one mtten">
+				<li><a href="">О компании</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<ul class="fleft nolist mltw mrtw two mtten">
+				<li><a href="">Сертификаты</a></li>
+				<li><a href="">Производство</a></li>
+				<li><a href="">Новости</a></li>
+			</ul>
+		</div>
+		<div class="fleft mltw mrtw adress mtten">Москва, Варшавское шоссе<br/>д. 42, офис 6112</div>
+		<div class="fright mltw tel">
+			<big>+7 (495) <b>640-03-77</b></big>
+			<button id="click-me-bottom" class="mttw button ptten plten prten pbten fright">Заказать звонок</button>
+		</div>
+		<div class="clearing"></div>
+	</div>-->
+	<div class="mttw">
+		<div class="logo fleft mrtw"><img title="Ю-ПАК" src="img/logo.svg" /></div>
+		<div class="navigation fleft">
+			<ul class="fleft nolist mltw mrtw one">
+				<li><a href="">О компании</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<ul class="fleft nolist mltw mrtw two">
+				<li><a href="">Сертификаты</a></li>
+				<li><a href="">Производство</a></li>
+				<li><a href="">Новости</a></li>
+			</ul>
+		</div>
+		<div class="fleft mltw mrtw adress"><i>Москва, Варшавское шоссе<br/>д. 42, офис 6112</i></div>
+		<div class="fright tel">
+			<big>+7 (495) <b>640-03-77</b></big>
+			<button id="click-me-bottom" class="mttw button ptten plten prten pbten fright">Заказать звонок</button>
+		</div>
+		<div class="clearing"></div>
+	</div>
+	
+	<ul class="tabs nolist tabs-my">
+		<li class="tab-link" data-tab="tab-1">Стеллажи</li>
+		<li class="tab-link" data-tab="tab-2">Металлические шкафы</li>
+		<li class="tab-link" data-tab="tab-3">Нестандартные металлоконструкции</li>
+	</ul>
+	
+	<div class="requisition">
+		<h2>Заявка на изготовление</h2>
+		<form>
+			<div class="shadow-inset">
+				<input type="text" class="fleft" placeholder="ФИО Контактного лица">
+				<textarea type="text" class="fright" placeholder="Комментарий к заявке"></textarea>
+				<input type="text" class="fleft" placeholder="E-mail">
+				<input type="text" class="fleft" placeholder="Телефон">
+			</div>
+			<div class="clearing"></div>
+			<div class="clearing grey-box  prtw pltw pbtw">
+				
+				<table class="fright">
+					<caption>Изделия в заявке</caption>
+					<tr>
+						<th>Наименование</th>
+						<th>Размеры</th>
+						<th>Количество</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>Консольный стеллаж</td>
+						<td>24 560 х 600</td>
+						<td>
+							<img src="img/minus.png" class="minus">
+							<input type="text" value="1">
+							<img src="img/plus.png" class="plus">
+						</td>
+						<td><img src="img/delete.png" class="delete"></td>
+					</tr>
+					<tr>
+						<td>Архивный стеллаж</td>
+						<td>2 025 х 600</td>
+						<td>
+							<img src="img/minus.png" class="minus">
+							<input type="text" value="1">
+							<img src="img/plus.png" class="plus">
+						</td>
+						<td><img src="img/delete.png" class="delete"></td>
+					</tr>
+					<tr>
+						<td>Металлический стеллаж</td>
+						<td>2 025 х 600</td>
+						<td>
+							<img src="img/minus.png" class="minus">
+							<input type="text" value="1">
+							<img src="img/plus.png" class="plus">
+						</td>
+						<td><img src="img/delete.png" class="delete"></td>
+					</tr>
+				</table>
+				<span>Выберете изделие</span>
+				<select class="plten">
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+					<option>Архивный стеллаж</option>
+					<option>Консольный стеллаж</option>
+					<option>Металлический стеллаж</option>
+				</select>
+				<div class="size">
+					<span>Высота (мм)</span>
+					<input type="text" class="mtten">
+				</div>
+				<div class="size">
+					<span>Глубина (мм)</span>
+					<input type="text" class="mtten">
+				</div>
+				<br>
+				<input type="button" value="Добавить" id="add">
+				<input type="submit" value="Отправить заявку" class="clearing" id="submit">
+				
+				<div class="clearing"></div>
+			</div>
+		</form>
+	</div>
+</div><!--wrap-->
+<div class="clearing"></div>
+
+<div class="footer pttw">
+	<button class="button ptten plten prten pbten fright mttw" align="right">
+				Заказать звонок
+			</button>
+	<div class="tableview fixed mttw">
+		<div class="cellview">
+			© 2015 «Ю-Пак Техника»<br/>info@u-pack.org
+		</div>
+		<div class="cellview">
+			<b>Центральный офис</b><br/>
+Москва, Варшавское шоссе д.42, офис 6112<br/>
+Тел./Факс: +7(495) 640-03-77
+		</div>
+		<div class="cellview ">
+			<b>Адрес производства</b><br/>Тула, ул.Герцена, д.24
+		</div>
+		
+	</div>
+			
+	
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
